@@ -84,6 +84,7 @@ $(function(){
     ctx.stroke();
     startX = endX;
     startY = endY;
+    return false;
   }
   function caUp(e){
     $("canvas").off("mousemove", caMove);
