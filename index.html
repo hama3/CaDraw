@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <title>CaDraw</title>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+    <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+  </head>
+
+  <body>
+    <nav></nav>
+    <div id="contents">
+      <div id="tool">
+        <img src="img/pencil.png" width="65" height="65" class="pencil">
+        <img src="img/eraser.png" width="65" height="65" class="eraser">
+      <!-- tool --></div>
+      <div id="main"><canvas id="CaDraw" width="788" height="500"></canvas></div>
+      <div id="etc">
+        <p>線の太さ<br>
+          <span id="wLine">1</span><br>
+          <input type="range" name="wRange" min="1" max="100" value="1"><br>
+        </p>
+        <p>色<br>
+          R:<span id="rColor">0</span><br>
+          <input type="range" name="rRange" min="0" max="255" value="0"><br>
+          G:<span id="gColor">0</span><br>
+          <input type="range" name="gRange" min="0" max="255" value="0"><br>
+          B:<span id="bColor">0</span><br>
+          <input type="range" name="bRange" min="0" max="255" value="0"><br>
+          A:<span id="aColor">1</span><br>
+          <input type="range" name="aRange" min="0.01" max="1" value="1" step="0.01">
+        </p>
+        <p><button id="clear">消去</button>  <button id="save">保存</button></p>
+      <!-- etc --></div>
+    <!-- content --></div>
+    <div id="colors">
+      <img src="img/black.jpg" width="50" height="115" class="blackImg">
+      <img src="img/white.jpg" width="50" height="115" class="whiteImg">
+      <img src="img/blue.jpg" width="50" height="115" class="blueImg">
+      <img src="img/lightblue.jpg" width="50" height="115" class="lightblueImg">
+      <img src="img/green.jpg" width="50" height="115" class="greenImg">
+      <img src="img/yellowgreen.jpg" width="50" height="115" class="yellowgreenImg">
+      <img src="img/yellow.jpg" width="50" height="115" class="yellowImg">
+      <img src="img/orange.jpg" width="50" height="115" class="orangeImg">
+      <img src="img/red.jpg" width="50" height="115" class="redImg">
+      <img src="img/gray.jpg" width="50" height="115" class="grayImg">
+      <img src="img/purple.jpg" width="50" height="115" class="purpleImg">
+      <img src="img/magenta.jpg" width="50" height="115" class="magentaImg">
+      <img src="img/babypink.jpg" width="50" height="115" class="babypinkImg">
+      <img src="img/brown.jpg" width="50" height="115" class="brownImg">
+    <!-- colors --></div>
+  </body>
+</html>
