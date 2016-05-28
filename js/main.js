@@ -10,6 +10,7 @@ $(function(){
   var colorA;
 
   var canvas = document.getElementById('CaDraw');
+  // var canvas2 = document.getElementById('AdDraw');
   var ctx = canvas.getContext('2d');
 
   // 線の太さ
@@ -29,7 +30,6 @@ $(function(){
   // 保存
   $('#save').click(function(e){
     var can = canvas.toDataURL("image/png");
-    can = can.replace("image/png", "image/octet-stream");
     window.open(can,"save");
   });
 
@@ -50,10 +50,6 @@ $(function(){
     if($(e.target).hasClass("babypinkImg")){ rVal = 239; $("#rColor").text(rVal); gVal = 193; $("#gColor").text(gVal); bVal = 196; $("#bColor").text(bVal); }
     if($(e.target).hasClass("brownImg")){ rVal = 124; $("#rColor").text(rVal); gVal = 96; $("#gColor").text(gVal); bVal = 53; $("#bColor").text(bVal); }
   });
-
-  // 画像にマウスを乗せた時
-  $("img").mouseover(function(){ $(this).fadeTo("fast",0.5); });
-  $("img").mouseout(function(){ $(this).fadeTo("fast",1); });
 
   // 鉛筆
   $("#tool .pencil").click(function(e){
@@ -94,5 +90,14 @@ $(function(){
   }
   $("canvas").on("mousedown", caDown);
   $("canvas").on("mouseup", caUp);
+
+  // 補助線
+  /*
+  $("canvas").mousemove(function(e){
+
+  }).mouseout(function(e){
+
+  });
+  */
 
 });
