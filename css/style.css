@@ -13,6 +13,10 @@ nav {
   height: 60px;
 }
 
+img:hover {
+  opacity: 0.6;
+}
+
 #contents {
   content: "";
   display: block;
