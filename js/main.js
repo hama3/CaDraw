@@ -49,6 +49,9 @@ $(function(){
     if($(e.target).hasClass("magentaImg")){ rVal = 229; $("#rColor").text(rVal); gVal = 0; $("#gColor").text(gVal); bVal = 134; $("#bColor").text(bVal); }
     if($(e.target).hasClass("babypinkImg")){ rVal = 239; $("#rColor").text(rVal); gVal = 193; $("#gColor").text(gVal); bVal = 196; $("#bColor").text(bVal); }
     if($(e.target).hasClass("brownImg")){ rVal = 124; $("#rColor").text(rVal); gVal = 96; $("#gColor").text(gVal); bVal = 53; $("#bColor").text(bVal); }
+    $('input[name=rRange]').val(rVal);
+    $('input[name=gRange]').val(gVal);
+    $('input[name=bRange]').val(bVal);
   });
 
   // 鉛筆
@@ -56,6 +59,9 @@ $(function(){
     rVal = 0; $("#rColor").text(rVal);
     gVal = 0; $("#gColor").text(gVal);
     bVal = 0; $("#bColor").text(bVal);
+    $('input[name=rRange]').val(rVal);
+    $('input[name=gRange]').val(gVal);
+    $('input[name=bRange]').val(bVal);
   });
 
   // 消しゴム
@@ -63,6 +69,9 @@ $(function(){
     rVal = 255; $("#rColor").text(rVal);
     gVal = 255; $("#gColor").text(gVal);
     bVal = 255; $("#bColor").text(bVal);
+    $('input[name=rRange]').val(rVal);
+    $('input[name=gRange]').val(gVal);
+    $('input[name=bRange]').val(bVal);
   });
 
   // 線の描画
@@ -99,12 +108,9 @@ $(function(){
 
   });
   */
-  
-  $("canvas").on({
-    mousedown: function(e) {
-      console.log("mousedown");
-      return false;
-    }
-  });
+
+  $("canvas").on({mousedown: function(e){ return false; }});
+  $("img").mouseup(function(e) { e.preventDefault(); });
+  $("img").mousedown(function(e) { e.preventDefault(); });
 
 });
