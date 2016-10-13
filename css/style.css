@@ -4,37 +4,22 @@ body {
   background-repeat: repeat;
 }
 
-#main/*, nav, #tool, #etc, #colors*/ {
+#main/*, nav, .tool, #etc, #colors*/ {
   border: 1px solid #a7a7a7;
 }
 
 nav {
   width: 1098px;
-  height: 60px;
 }
 
 img:hover {
   opacity: 0.6;
 }
 
-#contents {
+#contents:after {
   content: "";
   display: block;
   clear: both;
-}
-
-#tool {
-  float: left;
-  width:  143px;
-  height: 500px;
-}
-
-#tool img {
-  float: left;
-}
-
-#tool img:nth-child(odd) {
-  padding-right: 3px;
 }
 
 #main {
@@ -58,5 +43,5 @@ img:hover {
   float: left;
   width: 778px;
   height: 150px;
-  padding: 10px 160px 0;
+  padding: 10px 0 0 13px;
 }
