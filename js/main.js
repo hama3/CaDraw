@@ -55,7 +55,7 @@ $(function(){
   });
 
   // 鉛筆
-  $("#tool .pencil").click(function(e){
+  $("#pencil").click(function(e){
     rVal = 0; $("#rColor").text(rVal);
     gVal = 0; $("#gColor").text(gVal);
     bVal = 0; $("#bColor").text(bVal);
@@ -65,7 +65,7 @@ $(function(){
   });
 
   // 消しゴム
-  $("#tool .eraser").click(function(e){
+  $("#eraser").click(function(e){
     rVal = 255; $("#rColor").text(rVal);
     gVal = 255; $("#gColor").text(gVal);
     bVal = 255; $("#bColor").text(bVal);
